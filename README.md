@@ -1,3 +1,5 @@
+# 打赏作者
+![Screenshot_20211203_225844](https://user-images.githubusercontent.com/73088281/144623878-d70ea5d7-b036-4eca-a040-f159214207ab.jpg)
 # zhihuExtension
 最新版知乎扩展插件，适用于chrome浏览器。
 # 主要功能
