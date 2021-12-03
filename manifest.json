@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,						
+	"name": "zhihuExtension",
+    "description":"search for components",
+	"version": "5.1.4",
+    "icons":{
+        
+        "16":"icon16.png"
+    },
+    "options_page": "options.html",
+    "content_security_policy": "script-src 'self' ; object-src 'self'",
+    "browser_action":{
+        "default_icon":"icon16.png",
+        "default_popup":"popup.html"
+    },
+	"content_scripts": [
+        {
+		"matches": ["https://www.zhihu.com/people/*"],
+		"js": ["jquery-3.6.0.js", "blockAllFollowers.js","md5.js","signature.js"]
+	},{
+		"matches": ["https://www.zhihu.com/question/*"],
+		"js": ["jquery-3.6.0.js", "followAllVoters.js","md5.js","signature.js"]
+	}],
+    "permissions": [
+        "storage",
+        "cookies",
+        "*://*.zhihu.com/",
+        "*://*/_generated_background_page.html"
+      ]
+}
